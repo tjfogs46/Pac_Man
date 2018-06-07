@@ -22,8 +22,8 @@ public class Tile {
 	
 	/**
 	 * the no-graphics constructor (sets kind of wall to null so that we can test
-	 * @param pellet 0=empty 1=normal pellet 2 = super pellet 3=fruit
-	 * @param passable
+	 * @param pellet 0=empty; 1=normal pellet; 2 = super pellet; 3=fruit
+	 * @param passable whether or not PAC-MAN can pass through the tile
 	 */
 	public Tile(short pellet, boolean passable){
 		this.kind='\0';

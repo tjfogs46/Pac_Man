@@ -16,6 +16,16 @@ public abstract class Ghost {
 	 * @param scatter whether scatter mode is activated
 	 * @return an int array with the x and y positions of the tile. [x,y]
 	 */
+	/**
+	 * calculates the ghost's target tile
+	 * @param direction PAC Man's direction
+	 * @param pacX the P-Man's X tile
+	 * @param pacY pac man's Y tile
+	 * @param posX ghost's x tile
+	 * @param posY ghost's y tile
+	 * @param scatter whether or not scatter mode is enabled
+	 * @return an int[] of size 2 [targetX, targetY]
+	 */
 	protected abstract int[] getTargetTile(short direction, int pacX, int pacY, int posX, int posY, boolean scatter);
 	
 	/**
